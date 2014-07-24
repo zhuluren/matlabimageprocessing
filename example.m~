@@ -1,0 +1,9 @@
+clear all;
+load mandrill;
+figure('color','k');
+image(X);
+colormap(map);unti
+disp('退色前的图像');
+size(map)
+axis off
+axis image
