@@ -1,0 +1,13 @@
+clear all;
+RGB = imread('board.tif');
+NTSC = rgb2ntsc(RGB);
+HSV = rgb2hsv(RGB);
+RGB2 = hsv2rgb(HSV);
+RGB3 = ntsc2rgb(NTSC);
+YCBCR = rgb2ycbcr(RGB);
+RGB4 = ycbcr2rgb(YCBCR);
+subplot(2,3,1);imshow(RGB);
+subplot(2,3,2);imshow(HSV);
+subplot(2,3,3);imshow(RGB2);
+subplot(2,3,4);imshow(YCBCR);
+subplot(2,3,5);imshow(HSV);

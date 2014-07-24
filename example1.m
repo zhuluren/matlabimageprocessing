@@ -1,0 +1,10 @@
+clear all;
+RGB = reshape(ones(64,1)*reshape(jet(64),1,192),[64,64,3]);
+hsv = rgb2hsv(RGB);
+H = hsv(:,:,1);
+S = hsv(:,:,2);
+V = hsv(:,:,3);
+subplot(2,2,1);imshow(RGB);
+subplot(2,2,2);imshow(H);
+subplot(2,2,3);imshow(S);
+subplot(2,2,4);imshow(V);
